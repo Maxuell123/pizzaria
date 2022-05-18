@@ -1,4 +1,4 @@
-# pizzaria
+# Pizzaria
  Website Pizzaria
 
 ## Tarefas
