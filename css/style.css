@@ -41,6 +41,7 @@ html {
 
 body {
     background: var(--light-bg);
+    overflow-x: hidden;
 }
 
 section {
@@ -386,6 +387,92 @@ section {
      background-color: var(--black);
      color: var(--white);
  }
+/* shopping-cart */
+
+
+/* home animation */
+@keyframes fadeLeft {
+    0%{
+        transform: translateX(5rem);
+    }
+}
+
+@keyframes fadeRight {
+    0%{
+        transform: translateX(-5rem);
+    }
+}
+/* home animation */
+
+
+/* home */
+.home-bg {
+    background:url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-bg .home .slide-container {
+    margin-top: 12rem;
+}
+
+.home-bg .home .slide-container .slide {
+    display: none;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.home-bg .home .slide-container .slide.active {
+    display: flex;
+} 
+
+.home-bg .home .slide-container .slide .image {
+    flex:1 1 40rem;
+    animation: fadeRight .4s linear; /* home animation */
+}
+
+.home-bg .home .slide-container .slide .image img {
+    width: 100%;
+}
+
+.home-bg .home .slide-container .slide .content {
+    flex:1 1 40rem;
+    text-align: center;
+    animation: fadeLeft .4s linear; /* home animation */
+}
+
+.home-bg .home .slide-container .slide .content h3 {
+    color: var(--white);
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    font-size: 7.5rem;
+    text-shadow: var(--box-shadow);
+    line-height: 1;
+}
+
+.home-bg .home .slide-container .slide .content .fa-angle-left,
+.home-bg .home .slide-container .slide .content .fa-angle-right {
+    height: 5rem;
+    width: 5rem;
+    line-height: 4.8rem;
+    font-size: 2rem;
+    color: var(--black);
+    background-color: var(--white);
+    margin: 0 .5rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.home-bg .home .slide-container .slide .content .fa-angle-left:hover,
+.home-bg .home .slide-container .slide .content .fa-angle-right:hover {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+
+ 
 
 
 
@@ -435,6 +522,10 @@ section {
     .header .flex .navbar a {
        display: block;
        margin: 2rem;
+    }
+
+    .home-bg .home .slide-container .slide .content h3 {
+        font-size: 4rem;
     }
 }
 
