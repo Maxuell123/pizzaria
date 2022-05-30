@@ -50,6 +50,14 @@ section {
     max-width: 1200px;
 }
 
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
 .btn {
     display: block;
     width: 100%;
@@ -390,6 +398,7 @@ section {
 /* shopping-cart */
 
 
+
 /* home animation */
 @keyframes fadeLeft {
     0%{
@@ -403,6 +412,7 @@ section {
     }
 }
 /* home animation */
+
 
 
 /* home */
@@ -470,8 +480,42 @@ section {
     background-color: var(--red);
     color: var(--white);
 }
+/* home */
 
 
+/* about */
+.about .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about .box-container .box {
+    background-color: var(--white);
+    border-radius: .5rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.about .box-container .box img {
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.about .box-container .box h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.about .box-container .box p {
+    padding: 1rem 0;
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
  
 
 
@@ -544,5 +588,9 @@ section {
     .shopping-cart {
         width: 100%;
         border-left: 0;
+    }
+
+    .about .box-container {
+        grid-template-columns: 1fr;
     }
 }

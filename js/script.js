@@ -4,6 +4,8 @@ let navbar = document.querySelector('.header .flex .navbar');
 document.querySelector('#menu-btn').onclick = () => {
     navbar.classList.toggle('active');
 }
+// NAVBAR
+
 
 // USER ACCOUNT
 let account = document.querySelector('.user-account');
@@ -30,6 +32,7 @@ document.querySelector('#close-orders').onclick = () =>{
 }
 // MY ORDERS
 
+
 // SHOPPING-CART
 let cart = document.querySelector('.shopping-cart');
 
@@ -40,6 +43,7 @@ document.querySelector('#cart-btn').onclick = () =>{
 document.querySelector('#close-cart').onclick = () =>{
    cart.classList.remove('active');
 }
+// SHOPPING-CART
 
 
 window.onscroll = () => {
@@ -64,5 +68,5 @@ function prev() {
     index = (index - 1 + slides.length) % slides.length;
     slides[index].classList.add('active');
 }
-
+//HOME SLIDE
 
