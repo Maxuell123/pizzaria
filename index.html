@@ -393,7 +393,34 @@
                     <span>your name :</span>
                     <input type="text" name="name" class="box" required placeholder="enter your name" maxlength="20">
                 </div>
+                <div class="inputBox">
+                    <span>your number :</span>
+                    <input type="number" name="number" class="box" required placeholder="enter your number" maxlength="0">
+                </div>
+                <div class="inputBox">
+                    <span>payment method :</span>
+                    <select name="method" class="box">
+                        <option value="cash on delivery">cash on delivery</option>
+                        <option value="credit card">credit card</option>
+                        <option value="paytm">paytm</option>
+                        <option value="paypal">paypal</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <span>address line 01 :</span>
+                    <input type="text" name="flat" class="box" required placeholder="e.g. flat no." maxlength="50">
+                </div>
+                <div class="inputBox">
+                    <span>address line 02 :</span>
+                    <input type="text" name="street" class="box" required placeholder="e.g. street name." maxlength="50">
+                </div>
+                <div class="inputBox">
+                    <span>pin code :</span>
+                    <input type="text" name="pin_code" class="box" required placeholder="e.g.123456" maxlength="0">
+                </div>
             </div>
+
+            <input type="submit" value="order now" class="btn" name="order">
 
         </form>
 

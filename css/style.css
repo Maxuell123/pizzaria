@@ -576,10 +576,68 @@ section {
     font-size: 1.8rem;
     color: var(--black);
 }
+/* menu */
 
 
-
-
+/* order */
+.order form{
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    padding:2rem;
+    border-radius: .5rem;
+ }
+ 
+ .order form .display-orders{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap:1.5rem;
+    flex-wrap: wrap;
+    padding:3rem 2rem;
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+ }
+ 
+ .order form .display-orders p{
+    font-size: 2rem;
+    color:var(--light-color);
+    background-color: var(--white);
+    padding:1rem 3rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+ }
+ 
+ .order form .display-orders p span{
+    color:var(--red);
+ }
+ 
+ .order form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    justify-content: space-between;
+ }
+ 
+ .order form .flex .inputBox{
+    width: 49%;
+ }
+ 
+ .order form .flex .inputBox span{
+    font-size: 1.8rem;
+    color:var(--light-color);
+ }
+ 
+ .order form .flex .inputBox .box{
+    width: 100%;
+    background-color: var(--light-bg);
+    padding:1.4rem;
+    font-size: 1.8rem;
+    color:var(--black);
+    border-radius: .5rem;
+    margin:1rem 0;
+ }
+/* order */
 
 
 
@@ -637,6 +695,10 @@ section {
 
     .home-bg .home .slide-container .slide .content h3 {
         font-size: 4rem;
+    }
+
+    .order form .flex .inputBox {
+        width: 100%;
     }
 }
 
