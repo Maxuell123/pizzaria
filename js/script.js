@@ -70,3 +70,15 @@ function prev() {
 }
 //HOME SLIDE
 
+
+//FAQ
+let accordion = document.querySelectorAll('.faq .accordion-container .accordion');
+
+accordion.forEach(acco =>{
+    acco.onclick = () =>{
+        accordion.forEach(remove => remove.classList.remove('active'));
+        acco.classList.add('active');
+    }
+});
+//FAQ
+
